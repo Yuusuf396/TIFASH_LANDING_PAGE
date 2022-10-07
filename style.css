@@ -18,15 +18,16 @@
     }
 }
 body {
-  
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  
 }
+
 html,
 body {
-scroll-behavior: smooth;
-  position: relative;
-  height: 100%;
+    scroll-behavior: smooth;
+    position: relative;
+    height: 100%;
+    width:100%;
+    overflow-x:hidden;
 }
 
 body {
@@ -80,14 +81,12 @@ body {
     gap: 1.2rem;
 }
 .login_btn{
-  background-color: var(--primamry-light-brown);
-  border: 1px solid var(--primary-dark-brown);
-  padding-top: .7rem;
-  padding-bottom: .7rem;
-  padding-left: 1rem;
-  padding-right:1rem ;
-
-  
+    background-color: var(--primamry-light-brown);
+    border: 1px solid var(--primary-dark-brown);
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+    padding-left: 1rem;
+    padding-right:1rem ;  
 }
 ion-icon{
     margin-right: 3.5rem;
@@ -106,8 +105,8 @@ ion-icon{
     font-weight: 800;
     line-height: 6.8rem; 
     max-width: 38rem;
-     margin-bottom:3rem ;
-     margin-top: 2.6rem;
+    margin-bottom:3rem ;
+    margin-top: 2.6rem;
     color: var(--primary-dark-brown);
 }
 .header_p{
