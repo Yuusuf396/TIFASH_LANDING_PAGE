@@ -101,7 +101,7 @@ var swiper = new Swiper(".fourth_section_img", {
      
     },
     1024: {
-      spaceBetween: 5,
+      // spaceBetween: 5,
       slidesPerView: 3,
       
      
