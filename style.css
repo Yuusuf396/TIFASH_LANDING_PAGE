@@ -290,7 +290,6 @@ ion-icon{
 .fourth_section_text{
     margin-inline: 5rem;
     margin-block: 5rem;
-
 }
  
 .fourth_section_header{
@@ -319,7 +318,7 @@ ion-icon{
     margin-top: 3rem;
 }
 .fourth_section_img{
-    width: 75%; 
+    /* width: 75%;  */
 }
 span.swiper-pagination-bullet.swiper-pagination-bullet-active,.first_pagination{
     background: var(--primamry-light-brown);
@@ -705,6 +704,8 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active,.second_pagination
     /* FOURTH SECTION */
     .fourth_section{
         flex-direction: column;     
+        justify-content: center;
+        align-items:center ;
     }
     .fourth_section_text{
         display: flex;
