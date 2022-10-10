@@ -93,7 +93,7 @@ var swiper = new Swiper(".fourth_section_img", {
   },
   breakpoints: {
     640: {
-      slidesPerView: 2,
+      slidesPerView: 1,
      
     },
     768: {
