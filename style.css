@@ -285,6 +285,7 @@ ion-icon{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
    padding-block:5rem ;
 }
 .fourth_section_text{
@@ -715,6 +716,11 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active,.second_pagination
     }
     .fourth_section_header{
         text-align: center;
+    }
+    .fourth_section_img{
+        /* width: 100%; */
+        align-items: center;
+        justify-content: center;
     }
     /* section5 */
     .fifth_section_img_1{
