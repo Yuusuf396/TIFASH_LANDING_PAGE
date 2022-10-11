@@ -87,22 +87,29 @@ var swiper = new Swiper(".fourth_section_img", {
   loop: true,
   
   spaceBetween: 13,
+  // spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
+
   breakpoints: {
-    640: {
-      slidesPerView: 1,
-     
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 50,
+      },
     },
-    768: {
-      slidesPerView: 2,
-     
-    },
-    1024: {
-      spaceBetween: 5,
-      slidesPerView: 3,
-    },
-  },
 });
