@@ -6,6 +6,8 @@
      --primary-dark-brown:#34251F;
      --white:#fff;
      --cream-backGround:#f5f5f5;
+     --star:#FFB168;
+     --crossed:#C20A0A;
 }
 *{
     box-sizing: border-box;
@@ -321,6 +323,23 @@ ion-icon{
 .fourth_section_img{
     width: 75%; 
 }
+.swiper_components{
+    background: var(--white);
+    row-gap: 2rem;
+    width: 22.6rem;
+    display: flex;
+    justify-content: space-around;
+}
+.swiper_components span{
+    margin-bottom:2rem;
+}
+.fourth_swiper_text{
+    color:var(--primary-dark-brown);
+    font-family: 'Frank Ruhl Libre', serif;
+     font-size: 1.5em;
+     font-weight: 700;
+     padding-block: .9rem;
+}
 span.swiper-pagination-bullet.swiper-pagination-bullet-active,.first_pagination{
     background: var(--primamry-light-brown);
 }
@@ -335,7 +354,15 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active,.first_pagination{
     align-items: center;
 
 }
-
+.fa-star{
+    color:var(--star);
+}
+.crossed{
+    color: var(--crossed);
+    opacity: 20%;
+    text-decoration: line-through;
+     
+}
  
 /* FIFTH SECTION */
 .fifth_section{
