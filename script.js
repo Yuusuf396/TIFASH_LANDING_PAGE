@@ -62,12 +62,12 @@ hamburger.addEventListener('click', () => {
 var swiper = new Swiper(".mySwiper", {
   loop: true,
   
-  spaceBetween: 10,
   centeredSlides: true,
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
   },
+  spaceBetween: 10,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -94,10 +94,10 @@ var swiper = new Swiper(".fourth_section_img", {
   spaceBetween: 13,
   // spaceBetween: 30,
   centeredSlides: true,
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,

@@ -328,17 +328,28 @@ ion-icon{
     row-gap: 2rem;
     width: 22.6rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    padding-left: rem;
+    border-radius: .7rem;
+
 }
-.swiper_components span{
-    margin-bottom:2rem;
+#span{
+    margin-bottom:1rem;
+    padding-left: 2rem;
+
+}
+.swiper_container{
+    width: 170%;
+    border-radius: 1rem;
 }
 .fourth_swiper_text{
     color:var(--primary-dark-brown);
     font-family: 'Frank Ruhl Libre', serif;
-     font-size: 1.5em;
-     font-weight: 700;
-     padding-block: .9rem;
+     font-size: 1.7rem;
+     font-weight: 900;
+     padding-block: 1.2rem;
+    padding-left: 2rem;
+
 }
 span.swiper-pagination-bullet.swiper-pagination-bullet-active,.first_pagination{
     background: var(--primamry-light-brown);
@@ -346,22 +357,24 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active,.first_pagination{
 .swiper-pagination-bullet,.first_pagination{
     background: var(--primary-dark-brown);
     /* border: 1px solid var(--primamry-light-brown); */
-
 }
 .fouth_section_pagination{
     display:flex ;
-    justify-content: baseline;
+    justify-content: flex-start;
     align-items: center;
-
 }
 .fa-star{
+ 
+}
+#fa_solid{
     color:var(--star);
+    margin-top: 1rem;
+    padding-left: 2rem;
 }
 .crossed{
     color: var(--crossed);
     opacity: 20%;
-    text-decoration: line-through;
-     
+    text-decoration: line-through;   
 }
  
 /* FIFTH SECTION */
@@ -744,10 +757,19 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active,.second_pagination
     .fourth_section_header{
         text-align: center;
     }
+    
     .fourth_section_img{
         /* width: 100%; */
         align-items: center;
         justify-content: center;
+    }
+    .swiper_components{
+        background: var(--white);
+        width: 35.4rem;
+       
+    }
+    .swiper_container{
+       width: 100%; 
     }
     /* section5 */
     .fifth_section_img_1{
