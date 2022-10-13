@@ -117,7 +117,7 @@ ion-icon{
     font-size: 1.4rem;
     max-width: 29rem;
     margin-bottom: 2rem;
-
+    font-weight: 600;
 }
 .header_button{
     background: var(--primary-dark-brown);
@@ -131,11 +131,15 @@ ion-icon{
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
 
 }
-.header_button_text{
+.header_text{
     font-size: 1.3rem;
     font-weight: 700;
+    animation: moveInLeft 1s ease-in 1s;
 }
+.header_img{
+    animation: moveInRight 1s ease-in 1s;
 
+}
 .first_setion{
     background: var(--primamry-light-brown);
 
@@ -232,6 +236,10 @@ ion-icon{
     max-width: 30rem;
 
   }
+  .section_three_text{
+    animation: moveInRight 1s ease-in 1s;
+
+  }
   .third_section_paragraph{
     font-family: 'Kdam Thmor Pro', sans-serif;
     font-family: 'Open Sans', sans-serif;
@@ -247,6 +255,8 @@ ion-icon{
     background-repeat: no-repeat;
     background-position: bottom left;
     background-attachment: fixed;
+    animation: moveInLeft 1s ease-in 1s;
+
   }
  
   .stats_div{
@@ -340,7 +350,7 @@ ion-icon{
 }
 .swiper_container{
     width: 170%;
-    border-radius: 1rem;
+    border-radius: .85rem;
 }
 .fourth_swiper_text{
     color:var(--primary-dark-brown);
@@ -363,9 +373,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active,.first_pagination{
     justify-content: flex-start;
     align-items: center;
 }
-.fa-star{
  
-}
 #fa_solid{
     color:var(--star);
     margin-top: 1rem;
@@ -434,6 +442,9 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active,.first_pagination{
     align-self: center;
     margin-left: 10rem;
 }
+.sixth_section_text{
+    animation: moveInLeft 1s ease-in 1s;
+}
 .sixt_section_countdown_div{
     display: flex;
     margin-left: 0;
@@ -472,6 +483,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active,.first_pagination{
 
 .section_6_Img{
      background: var(--primamry-light-brown);
+    animation: moveInRight 1s ease-in 1s;
 }
 
 /* SEVENTH SECTION TAB */
@@ -611,6 +623,90 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active,.second_pagination
     outline: none;
 }
  
+  /* .reveal{
+    position: relative;
+    transform: translateY(15rem);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  
+  .reveal.available{
+    transform: translateY(0);
+    opacity: 1;
+  } */
+  
+
+  @keyframes fade-bottom {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-left {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-right {
+    0% {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+  /* 
+@keyframes moveInLeft {
+      0% {
+        opacity: 0;
+        transform: translateX(-10rem); }
+      80% {
+        transform: translateX(-1rem); }
+      100% {
+        opacity: 1;
+        transform: translate(0); }
+  
+  
+    }
+  
+  @keyframes moveInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(10rem); }
+    80% {
+      transform: translateX(-1rem); }
+    100% {
+      opacity: 1;
+      transform: translate(0); } }
+  
+  @keyframes moveUp {
+    0% {
+      opacity: 0;
+      transform: translateY(3rem); }
+    100% {
+      opacity: 1;
+      transform: translate(0); }
+     }
+     @keyframes moveDown {
+        0% {
+          opacity: 0;
+          transform: translateY(-3rem); }
+        100% {
+          opacity: 1;
+          transform: translate(0); }
+         } */
+
 /* Back to top */
 @media screen and (prefers-reduced-motion: no-preference) {
     html {
@@ -701,17 +797,20 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active,.second_pagination
         align-items: center;
         flex-direction: column;
         text-align: center;
+        animation: moveDown 1s ease-in 1s;    
     }
     .header_img{
         display: flex;
         align-items: center;
         padding-inline: 30rem;
+         animation: moveUp 1s ease-in 1s;
     }
     .img_header{
         width: 28rem;
         /* width: 200%; */
         align-self: center;
     }
+    /* Section two */
     .second_section_images{   
         flex-direction: column;
     }
